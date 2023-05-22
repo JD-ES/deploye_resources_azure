@@ -44,7 +44,7 @@ resource "azurerm_key_vault" "kv-app-prod-eastus-001" {
   tags                = var.tags
   network_acls {
     default_action             = "Deny"
-    ip_rules                   = ["177.91.248.74"]
+    ip_rules                   = ["177.91.40.90"]
     virtual_network_subnet_ids = [azurerm_subnet.sub-app-prod-eastus-001.id]
     bypass                     = "None"
   }
